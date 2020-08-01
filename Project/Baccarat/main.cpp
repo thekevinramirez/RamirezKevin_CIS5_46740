@@ -54,7 +54,7 @@ int main(int argc, char** argv)  {
     if (moneyBet > playerBank){
         cout << "You don't have enough money to bet. Please try again.";
     }
-    else{
+    else if{
         switch (choice){
             case 'B' : cout << "You entered Banker.\n";
                         break;
@@ -65,7 +65,7 @@ int main(int argc, char** argv)  {
             case 'p' : cout << "You entered Player.\n";
             default : cout << "You did not enter B, b, P, or p!" << endl;
         }
-        if (choice == b || choice == B){
+        else if (choice == b || choice == B){
             string result = betting();
             string b = "Banker";
             if (result == b){
@@ -83,7 +83,7 @@ int main(int argc, char** argv)  {
                         << " account." << endl;
         }
     }
-        else if{
+        if{
             string result = betting();
             string p = "Player";
             if (result == p){
@@ -101,15 +101,15 @@ int main(int argc, char** argv)  {
                         << " account." << endl;
             }
         }
-        else if{
+        else{
             string result = betting();
             string t = "Tie";
             (result == t){
                 cout << "The winner of this round... is " << result <<"!"<<endl;
                 cout << "Congratulations! you don't lose anything!" << endl;
-    }
+            }
         }
     
                 
    
-}return 0;
+}return main;
